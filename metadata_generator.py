@@ -28,8 +28,8 @@ with open(DATASET_PATH) as f:
 
         path_to_create = os.path.join(os.getcwd(), row['cve_id'].strip(), row['vul_id'].strip())
 
-        os.makedirs(path_to_create, 0o775, exist_ok=True)
-        shutil.copy2(os.path.join(os.getcwd(), "deps.sh"), path_to_create)
+        # os.makedirs(path_to_create, 0o775, exist_ok=True)
+        # shutil.copy2(os.path.join(os.getcwd(), "deps.sh"), path_to_create)
 
         id += 1
         result.append(
