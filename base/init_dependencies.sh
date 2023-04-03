@@ -12,13 +12,12 @@ EXTRACTED_DEPENDENCIES_PATH=$TARGET_PATH/extracted_dependencies
 
 rm -rf "$EXTRACTED_DEPENDENCIES_PATH" \
   && mkdir "$EXTRACTED_DEPENDENCIES_PATH" \
-    && cd "$EXTRACTED_DEPENDENCIES_PATH" || exit 1;
-
-echo "Extract all dependencies from the 'jar' files from $DEPENDENCY_PATH ..." \
-    && find "$DEPENDENCY_PATH" -type f -name "*.jar" \(-exec jar -xf {} \; -o -quit\)
+    && cd "$EXTRACTED_DEPENDENCIES_PATH" \
+&& echo "Extract all dependencies from the 'jar' files from $DEPENDENCY_PATH ..." \
+    && find "$DEPENDENCY_PATH" -type f -name "*.jar" -exec jar -xf {} \;
 
 echo "Delete *.RSA *.DSA *.SF signature files..." \
-  && find . -type f \( -name "*.RSA" -o -name "*.DSA" -o -name "*.SF" \) -delete -o -quit;
+  && find . -type f \( -name "*.RSA" -o -name "*.DSA" -o -name "*.SF" \) -delete
 
 echo "Merge all dependencies into a single 'jar' file..." \
   && jar -cvf "$TARGET_PATH"/all-dependencies.jar . \
