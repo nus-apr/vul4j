@@ -960,9 +960,7 @@
         "test_class_directory": "server/build/classes/test",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/server/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew :cloudfoundry-identity-server:compileTestJava ",
         "test_all_cmd": "./gradlew :cloudfoundry-identity-server:test",
         "line_numbers": [],
@@ -985,9 +983,7 @@
         "test_class_directory": "server/build/classes/java/test",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/server/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew :cloudfoundry-identity-server:compileTestJava ",
         "test_all_cmd": "./gradlew :cloudfoundry-identity-server:test",
         "line_numbers": [],
@@ -1042,8 +1038,8 @@
         "test_all_cmd": "mvn test",
         "line_numbers": [],
         "failing_test": [
-            "org.codehaus.plexus.util.cli.shell.BourneShellTest",
-            "org.codehaus.plexus.util.cli.CommandlineTest"
+            "org.codehaus.plexus.util.cli.CommandlineTest",
+            "org.codehaus.plexus.util.cli.shell.BourneShellTest"
         ],
         "passing_test": [],
         "count_neg": 0,
@@ -1511,9 +1507,7 @@
         "test_class_directory": "build/classes/java/main",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew compileTestJava ",
         "test_all_cmd": "./gradlew test",
         "line_numbers": [],
@@ -1711,9 +1705,7 @@
         "test_class_directory": "spring-webmvc/build/classes/test",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/spring-webmvc/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew :spring-webmvc:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-webmvc:test",
         "line_numbers": [],
@@ -1736,9 +1728,7 @@
         "test_class_directory": "spring-web/build/classes/java/test",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/spring-web/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew :spring-web:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-web:test",
         "line_numbers": [],
@@ -1761,9 +1751,7 @@
         "test_class_directory": "spring-core/build/classes/test",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/spring-core/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew :spring-core:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-core:test",
         "line_numbers": [],
@@ -1786,9 +1774,7 @@
         "test_class_directory": "oauth2/oauth2-jose/build/classes/java/test",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/oauth2/oauth2-jose/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew :spring-security-oauth2-jose:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-security-oauth2-jose:test",
         "line_numbers": [],
@@ -1811,9 +1797,7 @@
         "test_class_directory": "core/build/classes/test",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/core/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew :spring-security-core:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-security-core:test",
         "line_numbers": [],
@@ -1836,9 +1820,7 @@
         "test_class_directory": "core/build/classes/java/test",
         "java_version": 8,
         "build_system": "gradle",
-        "dependencies": [
-            "src/core/target/all-dependencies.jar"
-        ],
+        "dependencies": [],
         "compile_cmd": "./gradlew :spring-security-core:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-security-core:test",
         "line_numbers": [],

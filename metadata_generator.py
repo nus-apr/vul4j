@@ -44,13 +44,18 @@ with open(DATASET_PATH) as f:
         for failing_test in row['failing_tests'].strip().split(','):
             failing_tests.add(failing_test.split("#")[0])
 
+        if row['build_system'].strip().lower() == 'maven':
+            all_dependencies_jar_path_lst = [all_dependencies_jar_path]
+        else:
+            all_dependencies_jar_path_lst = []
+
 
         # create dep.sh script
-        script_content = "#!/bin/bash\n"
-        if compliance_level == '7':
-            script_content += "export JAVA_HOME=$(echo $JAVA7_HOME)\n"
-        else:
-            script_content += "export JAVA_HOME=$(echo $JAVA8_HOME)\n"
+        # script_content = "#!/bin/bash\n"
+        # if compliance_level == '7':
+        #     script_content += "export JAVA_HOME=$(echo $JAVA7_HOME)\n"
+        # else:
+        #     script_content += "export JAVA_HOME=$(echo $JAVA8_HOME)\n"
 
         # path_to_create = os.path.join(os.getcwd(), row['cve_id'].strip(), row['vul_id'].strip())
         # os.makedirs(path_to_create, 0o775, exist_ok=True)
@@ -71,7 +76,7 @@ with open(DATASET_PATH) as f:
                 "test_class_directory": test_classes_dir,
                 "java_version": compliance_level,
                 "build_system": row['build_system'].strip().lower(),
-                "dependencies": [all_dependencies_jar_path],
+                "dependencies": all_dependencies_jar_path_lst,
                 "compile_cmd": f"{compile_cmd} {cmd_options}",
                 "test_all_cmd": test_all_cmd,
                 "line_numbers": [],

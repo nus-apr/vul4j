@@ -16,5 +16,5 @@ rm -rf "$EXTRACTED_DEPENDENCIES_PATH" \
                         && echo "Extract all dependencies from the 'jar' files from $DEPENDENCY_PATH ..." \
                                 && find "$DEPENDENCY_PATH" -type f -name "*.jar" | awk '{print "jar -xf "$1}' | sh  \
                                         && echo "Merge all dependencies into a single 'jar' file..." \
-                                                && jar -cf "$TARGET_PATH"/all-dependencies.jar . \
+                                                && jar -cvf "$TARGET_PATH"/all-dependencies.jar . \
                                                         && echo "JAR File with all dependencies successfully created: $TARGET_PATH/all-dependencies.jar"
