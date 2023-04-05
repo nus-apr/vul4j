@@ -40,3 +40,6 @@ ENV JAVA13_HOME /usr/lib/jvm/java-13-openjdk-amd64
 ENV JAVA16_HOME /usr/lib/jvm/java-16-openjdk-amd64
 
 WORKDIR /
+ENV _JAVA_OPTIONS -Djdk.net.URLClassPath.disableClassPathURLCheck=true
+ENV JAVA_ARGS -Xmx4g -Xms1g -XX:MaxPermSize=512m
+ENV MVN_OPTS -Xmx4g -Xms1g -XX:MaxPermSize=512m
