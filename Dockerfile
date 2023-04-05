@@ -18,3 +18,6 @@ RUN rm /tmp/jdk-7u80-linux-x64.tar.gz
 # set env
 ENV JAVA7_HOME /usr/lib/jvm/jdk1.7.0_80
 ENV JAVA8_HOME /usr/lib/jvm/java-8-openjdk-amd64
+ENV _JAVA_OPTIONS -Djdk.net.URLClassPath.disableClassPathURLCheck=true
+ENV JAVA_ARGS -Xmx4g -Xms1g -XX:MaxPermSize=512m
+ENV MVN_OPTS -Xmx4g -Xms1g -XX:MaxPermSize=512m
