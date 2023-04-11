@@ -20,5 +20,5 @@ echo "Delete *.RSA *.DSA *.SF signature files..." \
   && find . -type f \( -name "*.RSA" -o -name "*.DSA" -o -name "*.SF" \) -delete
 
 echo "Merge all dependencies into a single 'jar' file..." \
-  && jar -cvf "$TARGET_PATH"/all-dependencies.jar . \
+  && jar -cf "$TARGET_PATH"/all-dependencies.jar . \
     && echo "JAR File with all dependencies successfully created: $TARGET_PATH/all-dependencies.jar"

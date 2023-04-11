@@ -12,7 +12,7 @@ with open(DATASET_PATH) as f:
         vul_id = row['vul_id'].strip()
         cve_id = row['cve_id'].strip()
 
-        repo_slug = row['repo_slug'].strip().replace("/", "_")
+        repo_slug = row['repo_slug'].strip().split("/")[0]
         build_system = row['build_system'].strip()
         compliance_level = int(row['compliance_level'].strip())
 
@@ -67,8 +67,9 @@ with open(DATASET_PATH) as f:
         result.append(
             {
                 "id": id,
-                "subject": row['cve_id'].strip(),
-                "bug_id": row['vul_id'].strip(),
+                "subject": repo_slug,
+                "bug_id": cve_id,
+                "vul4j_id": vul_id,
                 "failing_module": failing_module,
                 "source_directory": src_java_dir,
                 "class_directory": src_classes_dir,
