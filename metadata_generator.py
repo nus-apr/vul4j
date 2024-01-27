@@ -7,48 +7,54 @@ DATASET_PATH = os.path.join(os.getcwd(), "dataset", "vul4j_dataset.csv")
 result = []
 id = 0
 with open(DATASET_PATH) as f:
-    reader = csv.DictReader(f, delimiter=',', )
+    reader = csv.DictReader(
+        f,
+        delimiter=",",
+    )
     for row in reader:
-        vul_id = row['vul_id'].strip()
-        cve_id = row['cve_id'].strip()
+        vul_id = row["vul_id"].strip()
+        cve_id = row["cve_id"].strip()
 
-        repo_slug = row['repo_slug'].strip().split("/")[0]
-        build_system = row['build_system'].strip()
-        compliance_level = int(row['compliance_level'].strip())
+        repo_slug = row["repo_slug"].strip().split("/")[0]
+        build_system = row["build_system"].strip()
+        compliance_level = int(row["compliance_level"].strip())
 
-        compile_cmd = row['compile_cmd'].strip()
-        test_all_cmd = row['test_all_cmd'].strip()
-        test_cmd = row['test_cmd'].strip()
-        cmd_options = row['cmd_options'].strip()
+        compile_cmd = row["compile_cmd"].strip()
+        test_all_cmd = row["test_all_cmd"].strip()
+        test_cmd = row["test_cmd"].strip()
+        cmd_options = row["cmd_options"].strip()
 
-        failing_module = row['failing_module'].strip()
-        src_java_dir = row['src'].strip()
-        src_classes_dir = row['src_classes'].strip()
-        test_java_dir = row['test'].strip()
-        test_classes_dir = row['test_classes'].strip()
+        failing_module = row["failing_module"].strip()
+        src_java_dir = row["src"].strip()
+        src_classes_dir = row["src_classes"].strip()
+        test_java_dir = row["test"].strip()
+        test_classes_dir = row["test_classes"].strip()
 
-        human_patch_url = row['human_patch'].strip()
+        human_patch_url = row["human_patch"].strip()
 
-        all_dependencies_jar_path = os.path.join("src", "target", "all-dependencies.jar")
+        all_dependencies_jar_path = os.path.join(
+            "src", "target", "all-dependencies.jar"
+        )
 
         if failing_module != "root" and failing_module != "":
             src_java_dir = os.path.join(failing_module, src_java_dir)
             src_classes_dir = os.path.join(failing_module, src_classes_dir)
             test_java_dir = os.path.join(failing_module, test_java_dir)
-            test_classes_dir = failing_module + '/' + test_classes_dir
-            all_dependencies_jar_path = os.path.join("src", failing_module, "target", "all-dependencies.jar")
+            test_classes_dir = failing_module + "/" + test_classes_dir
+            all_dependencies_jar_path = os.path.join(
+                "src", failing_module, "target", "all-dependencies.jar"
+            )
         else:
             failing_module = ""
 
         failing_tests = set()
-        for failing_test in row['failing_tests'].strip().split(','):
+        for failing_test in row["failing_tests"].strip().split(","):
             failing_tests.add(failing_test.split("#")[0])
 
-        if row['build_system'].strip().lower() == 'maven':
+        if row["build_system"].strip().lower() == "maven":
             all_dependencies_jar_path_lst = [all_dependencies_jar_path]
         else:
             all_dependencies_jar_path_lst = []
-
 
         # create dep.sh script
         # script_content = "#!/bin/bash\n"
@@ -76,19 +82,43 @@ with open(DATASET_PATH) as f:
                 "test_directory": test_java_dir,
                 "test_class_directory": test_classes_dir,
                 "java_version": compliance_level,
-                "build_system": row['build_system'].strip().lower(),
+                "build_system": row["build_system"].strip().lower(),
                 "dependencies": all_dependencies_jar_path_lst,
                 "compile_cmd": f"{compile_cmd} {cmd_options}",
                 "test_all_cmd": test_all_cmd,
                 "line_numbers": [],
-                "failing_test": list(failing_tests),
-                "passing_test": [],
-                "count_neg": 0,
+                "failing_test_identifiers": list(failing_tests),
+                "passing_test_identifiers": [],
+                "count_neg": len(failing_tests),
                 "count_pos": 0,
                 "test_timeout": 5,
+                "build_script": "build_subject",
+                "clean_script": "clean_subject",
+                "config_script": "config_subject",
+                "test_script": "test_subject",
+                "lanuage": "java",
+                "src": {
+                    "root_abspath": "/experiment/{subject}/{bug_id}/src".format(
+                        subject=repo_slug, bug_id=cve_id
+                    ),
+                    "entrypoint": {
+                        # "file": entry["source_file"]
+                        # if entry.get("language", "_") != "java"
+                        # else (
+                        #     (
+                        #         "src/main/java/"
+                        #         if "src/main/java/" not in entry["source_file"]
+                        #         else ""
+                        #     )
+                        #     + entry["source_file"][:-5].replace(".", "/")
+                        #     + ".java"
+                        # ),
+                        # "function": "main",
+                    },
+                },
+                "output_dir_abspath": "/output",
             }
         )
-
 
 
 root_project = os.getcwd()

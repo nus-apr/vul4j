@@ -17,13 +17,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.alibaba.json.bvt.bug.Issue1005"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/alibaba/CVE-2017-18349/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 2,
@@ -43,13 +53,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl batik-dom",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.batik.dom.util.TestCVE_2017_5662"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2017-5662/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 3,
@@ -69,13 +89,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl camel-core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.camel.component.xslt.XsltDTDTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2015-0263/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 4,
@@ -95,13 +125,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl camel-core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.camel.builder.xml.XPathFeatureTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2015-0264/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 5,
@@ -121,13 +161,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.compress.archivers.examples.ExpanderTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/APACHE-COMMONS-001/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 6,
@@ -147,13 +197,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.compress.Test_CVE_2018_1324"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2018-1324/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 7,
@@ -173,13 +233,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2018-11771/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 8,
@@ -199,13 +269,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.compress.archivers.zip.NioZipEncodingTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2019-12402/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 9,
@@ -225,13 +305,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.configuration2.TestYAMLConfiguration"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2020-1953/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 10,
@@ -251,13 +341,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.fileupload.DiskFileItemSerializeTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2013-2186/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 11,
@@ -277,13 +377,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.fileupload.MultipartStreamTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2014-0050/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 12,
@@ -303,13 +413,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.imaging.formats.jpeg.decoder.JpegDecoderTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2018-17202/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 13,
@@ -329,13 +449,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.imaging.formats.rgbe.RgbeReadTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2018-17201/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 14,
@@ -355,13 +485,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.commons.io.FilenameUtilsTestCase"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2021-29425/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 15,
@@ -381,13 +521,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn -pl rt/rs/extensions/providers",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.cxf.jaxrs.provider.atom.AtomPojoProviderTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-8739/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 16,
@@ -407,13 +557,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn -pl rt/rs/security/sso/saml",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.cxf.rs.security.saml.sso.CombinedValidatorTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2015-5253/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 17,
@@ -433,13 +593,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl httpclient",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.http.client.utils.TestURIBuilder"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/HTTPCLIENT-1803/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 18,
@@ -459,13 +629,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl jspwiki-main",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.wiki.WikiServletTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2019-0225/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 19,
@@ -485,13 +665,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl pdfbox",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.pdfbox.encryption.TestSymmetricKeyEncryption"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/PDFBOX-3341/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 20,
@@ -511,13 +701,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl pdfbox",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.pdfbox.pdmodel.TestPDDocument"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2018-11797/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 21,
@@ -537,13 +737,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.xml.security.test.stax.signature.SignatureVerificationTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2014-8152/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 22,
@@ -563,13 +773,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl web",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.shiro.web.util.WebUtilsTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-6802/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 23,
@@ -589,13 +809,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl bundles/extensions/xss",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.sling.xss.impl.XSSAPIImplTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-5394/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 24,
@@ -615,13 +845,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl bundles/extensions/xss",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.sling.xss.impl.XSSAPIImplTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-6798/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 25,
@@ -641,13 +881,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.sling.xss.impl.XSSAPIImplTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2017-15717/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 26,
@@ -667,13 +917,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.opensymphony.xwork2.validator.URLValidatorTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-4465/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 27,
@@ -693,13 +953,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl xwork-core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.opensymphony.xwork2.interceptor.ParametersInterceptorTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2014-0112/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 28,
@@ -719,13 +989,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.struts2.interceptor.CookieInterceptorTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2014-0113/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 29,
@@ -745,13 +1025,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.struts2.interceptor.CookieInterceptorTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2014-0116/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 30,
@@ -771,13 +1061,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.opensymphony.xwork2.validator.URLValidatorTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-8738/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 31,
@@ -797,13 +1097,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.struts2.dispatcher.mapper.DefaultActionMapperTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-4436/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 32,
@@ -823,13 +1133,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl xwork-core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.opensymphony.xwork2.security.DefaultExcludedPatternsCheckerTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2015-1831/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 33,
@@ -849,13 +1169,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.opensymphony.xwork2.ognl.OgnlUtilTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-3081/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 34,
@@ -875,13 +1205,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.opensymphony.xwork2.interceptor.I18nInterceptorTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2016-2162/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 35,
@@ -901,13 +1241,23 @@
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.struts2.util.TokenHelperTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2014-7809/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 36,
@@ -927,13 +1277,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl tika-parsers",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.tika.parser.iptc.IptcParserTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2018-8017/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 37,
@@ -953,13 +1313,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl container/openejb-core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.apache.openejb.core.rmi.BlacklistClassResolverTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apache/CVE-2015-8581/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 38,
@@ -979,13 +1349,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl cas-client-core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.jasig.cas.client.validation.Cas10TicketValidatorTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/apereo/CVE-2014-4172/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 39,
@@ -1003,13 +1383,23 @@
         "compile_cmd": "./gradlew :cloudfoundry-identity-server:compileTestJava ",
         "test_all_cmd": "./gradlew :cloudfoundry-identity-server:test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.cloudfoundry.identity.uaa.authentication.event.UserAuthenticationSuccessEventTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/cloudfoundry/CVE-2018-1192/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 40,
@@ -1027,13 +1417,23 @@
         "compile_cmd": "./gradlew :cloudfoundry-identity-server:compileTestJava ",
         "test_all_cmd": "./gradlew :cloudfoundry-identity-server:test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.cloudfoundry.identity.uaa.security.ScimUserSelfUpdateAllowedTest$WithInternalUserStoreEnabled$WhenAttemptingToUpdateAFieldThatIsNotAllowedToBeUpdated$WhenUpdatingTheEmailField"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/cloudfoundry/CVE-2019-3775/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 41,
@@ -1053,13 +1453,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.codehaus.plexus.archiver.zip.ZipUnArchiverTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/codehaus-plexus/CVE-2018-1002200/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 42,
@@ -1079,14 +1489,24 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
-            "org.codehaus.plexus.util.cli.CommandlineTest",
-            "org.codehaus.plexus.util.cli.shell.BourneShellTest"
+        "failing_test_identifiers": [
+            "org.codehaus.plexus.util.cli.shell.BourneShellTest",
+            "org.codehaus.plexus.util.cli.CommandlineTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 2,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/codehaus-plexus/CVE-2017-1000487/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 43,
@@ -1106,13 +1526,23 @@
         "compile_cmd": "mvn -DskipTests clean install; mvn -pl util test-compile -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl util",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.eclipse.rdf4j.common.io.ZipUtilTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/eclipse/CVE-2018-20227/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 44,
@@ -1132,13 +1562,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.OWASP.esapi.codecs.CodecImmunityTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/ESAPI/CVE-2013-5960/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 45,
@@ -1158,13 +1598,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl esigate-core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.esigate.xml.XsltRendererTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/esigate/CVE-2018-1000854/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 46,
@@ -1184,13 +1634,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.fasterxml.jackson.dataformat.xml.TestCVE_2016_3720"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/FasterXML/CVE-2016-3720/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 47,
@@ -1210,13 +1670,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.fasterxml.jackson.dataformat.xml.SupportDTDDefaultsTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/FasterXML/CVE-2016-7051/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 48,
@@ -1236,13 +1706,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.primeframework.jwt.VulnerabilityTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/inversoft/CVE-2018-1000531/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 49,
@@ -1262,13 +1742,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.primeframework.jwt.JWTTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/inversoft/CVE-2018-1000125/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 50,
@@ -1288,13 +1778,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl javamelody-core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "net.bull.javamelody.TestHtmlSessionInformationsReport"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/javamelody/CVE-2013-4378/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 51,
@@ -1314,13 +1814,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "hudson.plugins.ccm.CcmPublisherTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000054/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 52,
@@ -1340,13 +1850,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.kohsuke.groovy.sandbox.FinalizerTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000865/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 53,
@@ -1366,13 +1886,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "hudson.scheduler.CronTabTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jenkinsci/CVE-2018-1999044/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 54,
@@ -1392,13 +1922,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "hudson.util.XStream2Test"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jenkinsci/CVE-2017-1000355/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 55,
@@ -1418,13 +1958,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "hudson.scheduler.CronTabTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000864/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 56,
@@ -1444,13 +1994,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "hudson.tasks.junit.JUnitResultArchiverTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000056/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 57,
@@ -1470,13 +2030,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStepTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000089/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 58,
@@ -1496,13 +2066,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "hudson.scm.SubversionStatusTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000111/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 59,
@@ -1522,13 +2102,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.jsoup.parser.XmlTreeBuilderTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/jhy/CVE-2015-6748/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 60,
@@ -1548,13 +2138,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.owasp.validator.html.test.AntiSamyTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/nahsra/CVE-2016-10006/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 61,
@@ -1572,13 +2172,23 @@
         "compile_cmd": "./gradlew compileTestJava ",
         "test_all_cmd": "./gradlew test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "apoc.load.XmlTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/neo4j-contrib/CVE-2018-1000820/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 62,
@@ -1598,13 +2208,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn failsafe:integration-test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.neo4j.server.security.enterprise.auth.integration.bolt.LdapAuthIT"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/neo4j/CVE-2018-18389/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 63,
@@ -1624,13 +2244,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl protocols/ovsdb/rfc",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.onosproject.ovsdb.rfc.utils.VersionUtilTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/opennetworkinglab/CVE-2018-1000615/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 64,
@@ -1650,13 +2280,23 @@
         "compile_cmd": "./refine build -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl main",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.google.refine.tests.importers.XmlImporterTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/OpenRefine/CVE-2018-20157/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 65,
@@ -1676,13 +2316,23 @@
         "compile_cmd": "./refine build -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl main",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.google.refine.tests.importing.ImportingUtilitiesTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/OpenRefine/CVE-2018-19859/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 66,
@@ -1702,13 +2352,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "cd testsuite;mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.jboss.resteasy.test.mediatype.MediaTypeHeaderTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/resteasy/CVE-2020-1695/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 67,
@@ -1728,13 +2388,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.data.mapping.PropertyPathUnitTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2018-1274/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 68,
@@ -1754,13 +2424,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl spring-data-rest-webmvc",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.data.rest.webmvc.json.patch.JsonPatchTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2017-8046/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 69,
@@ -1778,13 +2458,23 @@
         "compile_cmd": "./gradlew :spring-webmvc:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-webmvc:test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.web.servlet.ResourceServletTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2016-9878/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 70,
@@ -1802,13 +2492,23 @@
         "compile_cmd": "./gradlew :spring-web:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-web:test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.http.HttpRangeTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2018-15756/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 71,
@@ -1826,13 +2526,23 @@
         "compile_cmd": "./gradlew :spring-core:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-core:test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.util.MimeTypeTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2018-1272/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 72,
@@ -1850,13 +2560,23 @@
         "compile_cmd": "./gradlew :spring-security-oauth2-jose:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-security-oauth2-jose:test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.security.oauth2.jwt.JwtIssuerValidatorTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2018-15801/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 73,
@@ -1874,13 +2594,23 @@
         "compile_cmd": "./gradlew :spring-security-core:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-security-core:test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.security.authentication.encoding.PlaintextPasswordEncoderTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2019-11272/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 74,
@@ -1898,13 +2628,23 @@
         "compile_cmd": "./gradlew :spring-security-core:compileTestJava ",
         "test_all_cmd": "./gradlew :spring-security-core:test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.security.core.token.SecureRandomFactoryBeanTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2019-3795/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 75,
@@ -1924,13 +2664,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl spring-security-oauth2",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.springframework.security.oauth2.provider.endpoint.SpelViewTests"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/spring-projects/CVE-2016-4977/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 76,
@@ -1950,13 +2700,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl retrofit",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "retrofit2.RequestFactoryTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/square/CVE-2018-1000850/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 77,
@@ -1976,13 +2736,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl modules/swagger-parser",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "io.swagger.parser.util.SwaggerDeserializerTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/swagger-api/CVE-2017-1000207/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 78,
@@ -2002,13 +2772,23 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl xstream",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "com.thoughtworks.acceptance.SecurityVulnerabilityTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/x-stream/CVE-2019-10173/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 79,
@@ -2028,12 +2808,22 @@
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "org.zeroturnaround.zip.DirectoryTraversalMaliciousTest"
         ],
-        "passing_test": [],
-        "count_neg": 0,
+        "passing_test_identifiers": [],
+        "count_neg": 1,
         "count_pos": 0,
-        "test_timeout": 5
+        "test_timeout": 5,
+        "build_script": "build_subject",
+        "clean_script": "clean_subject",
+        "config_script": "config_subject",
+        "test_script": "test_subject",
+        "lanuage": "java",
+        "src": {
+            "root_abspath": "/experiment/zeroturnaround/CVE-2018-1002201/src",
+            "entrypoint": {}
+        },
+        "output_dir_abspath": "/output"
     }
 ]

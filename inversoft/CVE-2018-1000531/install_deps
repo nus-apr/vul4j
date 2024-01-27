@@ -1,0 +1,8 @@
+#!/bin/bash
+apt-get update
+DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends  \
+  openjdk-8-jdk \
+  openjdk-8-jdk-headless \
+  ant \
+  gradle \
+  maven libguice-java
