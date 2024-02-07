@@ -30,7 +30,7 @@
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/alibaba/CVE-2017-18349/src",
+            "root_abspath": "/experiment/vul4j/alibaba/CVE-2017-18349/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
@@ -60,14 +60,13 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2017-5662/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2017-5662/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
@@ -97,18 +96,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2015-0263/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2015-0263/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 4,
@@ -135,18 +132,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2015-0264/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2015-0264/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 5,
@@ -173,18 +168,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/APACHE-COMMONS-001/src",
+            "root_abspath": "/experiment/vul4j/apache/APACHE-COMMONS-001/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 6,
@@ -211,18 +204,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2018-1324/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2018-1324/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 7,
@@ -249,18 +240,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2018-11771/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2018-11771/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 8,
@@ -287,18 +276,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2019-12402/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2019-12402/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 9,
@@ -325,18 +312,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2020-1953/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2020-1953/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 10,
@@ -363,18 +348,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2013-2186/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2013-2186/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 11,
@@ -401,18 +384,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2014-0050/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2014-0050/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 12,
@@ -439,18 +420,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2018-17202/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2018-17202/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 13,
@@ -477,18 +456,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2018-17201/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2018-17201/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 14,
@@ -515,18 +492,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2021-29425/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2021-29425/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 15,
@@ -553,18 +528,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-8739/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-8739/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 16,
@@ -591,18 +564,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2015-5253/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2015-5253/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 17,
@@ -629,18 +600,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/HTTPCLIENT-1803/src",
+            "root_abspath": "/experiment/vul4j/apache/HTTPCLIENT-1803/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 18,
@@ -667,18 +636,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2019-0225/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2019-0225/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 19,
@@ -705,18 +672,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/PDFBOX-3341/src",
+            "root_abspath": "/experiment/vul4j/apache/PDFBOX-3341/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 20,
@@ -743,18 +708,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2018-11797/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2018-11797/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 21,
@@ -781,18 +744,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2014-8152/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2014-8152/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 22,
@@ -819,18 +780,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-6802/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-6802/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 23,
@@ -857,18 +816,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-5394/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-5394/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 24,
@@ -895,18 +852,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-6798/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-6798/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 25,
@@ -933,18 +888,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2017-15717/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2017-15717/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 26,
@@ -971,18 +924,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-4465/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-4465/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 27,
@@ -1009,18 +960,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2014-0112/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2014-0112/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 28,
@@ -1047,18 +996,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2014-0113/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2014-0113/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 29,
@@ -1085,18 +1032,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2014-0116/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2014-0116/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 30,
@@ -1123,18 +1068,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-8738/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-8738/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 31,
@@ -1161,18 +1104,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-4436/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-4436/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 32,
@@ -1199,18 +1140,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2015-1831/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2015-1831/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 33,
@@ -1237,18 +1176,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-3081/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-3081/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 34,
@@ -1275,18 +1212,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2016-2162/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2016-2162/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 35,
@@ -1313,18 +1248,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2014-7809/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2014-7809/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 36,
@@ -1351,18 +1284,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2018-8017/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2018-8017/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 37,
@@ -1389,18 +1320,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apache/CVE-2015-8581/src",
+            "root_abspath": "/experiment/vul4j/apache/CVE-2015-8581/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 38,
@@ -1427,18 +1356,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/apereo/CVE-2014-4172/src",
+            "root_abspath": "/experiment/vul4j/apereo/CVE-2014-4172/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 39,
@@ -1463,18 +1390,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/cloudfoundry/CVE-2018-1192/src",
+            "root_abspath": "/experiment/vul4j/cloudfoundry/CVE-2018-1192/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 40,
@@ -1499,18 +1424,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/cloudfoundry/CVE-2019-3775/src",
+            "root_abspath": "/experiment/vul4j/cloudfoundry/CVE-2019-3775/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 41,
@@ -1537,18 +1460,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/codehaus-plexus/CVE-2018-1002200/src",
+            "root_abspath": "/experiment/vul4j/codehaus-plexus/CVE-2018-1002200/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 42,
@@ -1576,18 +1497,16 @@
         "count_neg": 2,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/codehaus-plexus/CVE-2017-1000487/src",
+            "root_abspath": "/experiment/vul4j/codehaus-plexus/CVE-2017-1000487/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 43,
@@ -1614,18 +1533,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/eclipse/CVE-2018-20227/src",
+            "root_abspath": "/experiment/vul4j/eclipse/CVE-2018-20227/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 44,
@@ -1652,18 +1569,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/ESAPI/CVE-2013-5960/src",
+            "root_abspath": "/experiment/vul4j/ESAPI/CVE-2013-5960/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 45,
@@ -1690,18 +1605,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/esigate/CVE-2018-1000854/src",
+            "root_abspath": "/experiment/vul4j/esigate/CVE-2018-1000854/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 46,
@@ -1728,18 +1641,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/FasterXML/CVE-2016-3720/src",
+            "root_abspath": "/experiment/vul4j/FasterXML/CVE-2016-3720/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 47,
@@ -1766,18 +1677,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/FasterXML/CVE-2016-7051/src",
+            "root_abspath": "/experiment/vul4j/FasterXML/CVE-2016-7051/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 48,
@@ -1804,18 +1713,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/inversoft/CVE-2018-1000531/src",
+            "root_abspath": "/experiment/vul4j/inversoft/CVE-2018-1000531/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 49,
@@ -1842,18 +1749,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/inversoft/CVE-2018-1000125/src",
+            "root_abspath": "/experiment/vul4j/inversoft/CVE-2018-1000125/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 50,
@@ -1880,18 +1785,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/javamelody/CVE-2013-4378/src",
+            "root_abspath": "/experiment/vul4j/javamelody/CVE-2013-4378/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 51,
@@ -1918,18 +1821,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000054/src",
+            "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000054/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 52,
@@ -1956,18 +1857,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000865/src",
+            "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000865/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 53,
@@ -1994,18 +1893,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jenkinsci/CVE-2018-1999044/src",
+            "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1999044/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 54,
@@ -2032,18 +1929,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jenkinsci/CVE-2017-1000355/src",
+            "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2017-1000355/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 55,
@@ -2070,18 +1965,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000864/src",
+            "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000864/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 56,
@@ -2108,18 +2001,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000056/src",
+            "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000056/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 57,
@@ -2146,18 +2037,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000089/src",
+            "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000089/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 58,
@@ -2184,18 +2073,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jenkinsci/CVE-2018-1000111/src",
+            "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000111/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 59,
@@ -2222,18 +2109,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/jhy/CVE-2015-6748/src",
+            "root_abspath": "/experiment/vul4j/jhy/CVE-2015-6748/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 60,
@@ -2260,18 +2145,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/nahsra/CVE-2016-10006/src",
+            "root_abspath": "/experiment/vul4j/nahsra/CVE-2016-10006/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 61,
@@ -2296,18 +2179,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/neo4j-contrib/CVE-2018-1000820/src",
+            "root_abspath": "/experiment/vul4j/neo4j-contrib/CVE-2018-1000820/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 62,
@@ -2334,18 +2215,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/neo4j/CVE-2018-18389/src",
+            "root_abspath": "/experiment/vul4j/neo4j/CVE-2018-18389/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 63,
@@ -2372,18 +2251,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/opennetworkinglab/CVE-2018-1000615/src",
+            "root_abspath": "/experiment/vul4j/opennetworkinglab/CVE-2018-1000615/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 64,
@@ -2410,18 +2287,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/OpenRefine/CVE-2018-20157/src",
+            "root_abspath": "/experiment/vul4j/OpenRefine/CVE-2018-20157/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 65,
@@ -2448,18 +2323,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/OpenRefine/CVE-2018-19859/src",
+            "root_abspath": "/experiment/vul4j/OpenRefine/CVE-2018-19859/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 66,
@@ -2486,18 +2359,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/resteasy/CVE-2020-1695/src",
+            "root_abspath": "/experiment/vul4j/resteasy/CVE-2020-1695/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 67,
@@ -2524,18 +2395,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2018-1274/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2018-1274/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 68,
@@ -2562,18 +2431,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2017-8046/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2017-8046/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 69,
@@ -2598,18 +2465,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2016-9878/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2016-9878/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 70,
@@ -2634,18 +2499,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2018-15756/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2018-15756/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 71,
@@ -2670,18 +2533,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2018-1272/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2018-1272/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 72,
@@ -2706,18 +2567,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2018-15801/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2018-15801/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 73,
@@ -2742,18 +2601,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2019-11272/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2019-11272/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 74,
@@ -2778,18 +2635,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2019-3795/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2019-3795/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 75,
@@ -2816,18 +2671,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/spring-projects/CVE-2016-4977/src",
+            "root_abspath": "/experiment/vul4j/spring-projects/CVE-2016-4977/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 76,
@@ -2854,18 +2707,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/square/CVE-2018-1000850/src",
+            "root_abspath": "/experiment/vul4j/square/CVE-2018-1000850/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 77,
@@ -2892,18 +2743,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/swagger-api/CVE-2017-1000207/src",
+            "root_abspath": "/experiment/vul4j/swagger-api/CVE-2017-1000207/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 78,
@@ -2930,18 +2779,16 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/x-stream/CVE-2019-10173/src",
+            "root_abspath": "/experiment/vul4j/x-stream/CVE-2019-10173/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     },
     {
         "id": 79,
@@ -2968,17 +2815,15 @@
         "count_neg": 1,
         "count_pos": 0,
         "test_timeout": 5,
-
         "build_script": "build_subject",
         "clean_script": "clean_subject",
         "config_script": "config_subject",
         "test_script": "test_subject",
         "language": "java",
         "src": {
-            "root_abspath": "/experiment/zeroturnaround/CVE-2018-1002201/src",
+            "root_abspath": "/experiment/vul4j/zeroturnaround/CVE-2018-1002201/src",
             "entrypoint": {}
         },
         "output_dir_abspath": "/output"
-
     }
 ]
