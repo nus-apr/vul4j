@@ -1812,12 +1812,25 @@
             "src/target/all-dependencies.jar"
         ],
         "clean_command": "mvn clean",
-        "build_command":"mvn -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
+        "build_command": "mvn -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
         "failing_test_identifiers": [
             "hudson.plugins.ccm.CcmPublisherTest"
+        ],
+        "localization": [
+            {
+                "generator": "DEV",
+                "score": 1.0,
+                "line_numbers": [
+                    87,
+                    88,
+                    89
+                ],
+                "file": "src/main/java/hudson/plugins/ccm/CcmParser.java",
+                "location": "hudson.plugins.ccm.CcmParser#parse(java.io.InputStream,String)"
+            }
         ],
         "passing_test_identifiers": [],
         "count_neg": 1,
@@ -1850,12 +1863,23 @@
             "src/target/all-dependencies.jar"
         ],
         "clean_command": "mvn clean",
-        "build_command":"mvn -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
+        "build_command": "mvn -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
         "line_numbers": [],
         "failing_test_identifiers": [
             "org.kohsuke.groovy.sandbox.FinalizerTest"
+        ],
+        "localization": [
+            {
+                "generator": "DEV",
+                "score": 1.0,
+                "line_numbers": [
+                    140
+                ],
+                "file": "src/main/java/org/kohsuke/groovy/sandbox/SandboxTransformer.java",
+                "location": "org.kohsuke.groovy.sandbox.SandboxTransformer#call(org.codehaus.groovy.control.SourceUnit, org.codehaus.groovy.classgen.GeneratorContext, org.codehaus.groovy.ast.ClassNode)"
+            }
         ],
         "passing_test_identifiers": [],
         "count_neg": 1,
@@ -1888,7 +1912,18 @@
             "src/core/target/all-dependencies.jar"
         ],
         "clean_command": "mvn clean",
-        "build_command":"mvn -pl core -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
+        "build_command": "mvn -pl core -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
+        "localization": [
+            {
+                "generator": "DEV",
+                "score": 1.0,
+                "line_numbers": [
+                    207
+                ],
+                "file": "core/src/main/java/hudson/scheduler/CronTab.java",
+                "location": "hudson.scheduler.CronTab#addTo(java.util.Calendar,int)"
+            }
+        ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
@@ -1925,6 +1960,17 @@
         "dependencies": [
             "src/core/target/all-dependencies.jar"
         ],
+        "localization": [
+            {
+                "generator": "DEV",
+                "score": 1.0,
+                "line_numbers": [
+                    147
+                ],
+                "file": "core/src/main/java/hudson/util/XStream2.java",
+                "location": "hudson.util.XStream2#init()"
+            }
+        ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
         "line_numbers": [],
@@ -1960,6 +2006,17 @@
         "build_system": "maven",
         "dependencies": [
             "src/core/target/all-dependencies.jar"
+        ],
+        "localization": [
+            {
+                "generator": "DEV",
+                "score": 1.0,
+                "line_numbers": [
+                    358
+                ],
+                "file": "core/src/main/java/hudson/scheduler/CronTab.java",
+                "location": "hudson.scheduler.CronTab#ceil(java.util.Calendar)"
+            }
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -2003,6 +2060,17 @@
         "failing_test_identifiers": [
             "hudson.tasks.junit.JUnitResultArchiverTest"
         ],
+        "localization": [
+            {
+                "generator": "DEV",
+                "score": 1.0,
+                "line_numbers": [
+                    164
+                ],
+                "file": "src/main/java/hudson/tasks/junit/SuiteResult.java",
+                "location": "hudson.tasks.junit.SuiteResult#parse(java.io.File,boolean,hudson.tasks.test.PipelineTestDetails)"
+            }
+        ],
         "passing_test_identifiers": [],
         "count_neg": 1,
         "count_pos": 0,
@@ -2032,6 +2100,17 @@
         "build_system": "maven",
         "dependencies": [
             "src/target/all-dependencies.jar"
+        ],
+        "localization": [
+            {
+                "generator": "DEV",
+                "score": 1.0,
+                "line_numbers": [
+                    65
+                ],
+                "file": "src/main/java/org/jenkinsci/plugins/workflow/support/steps/build/BuildTriggerStepExecution.java",
+                "location": "org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStepExecution#start()"
+            }
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
