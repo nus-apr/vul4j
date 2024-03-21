@@ -1832,7 +1832,7 @@
                             88,
                             89
                         ],
-                        "file": "src/main/java/hudson/plugins/ccm/CcmParser.java",
+                        "source_file": "src/main/java/hudson/plugins/ccm/CcmParser.java",
                         "location": "hudson.plugins.ccm.CcmParser#parse(java.io.InputStream,String)"
                     }
                 ]
@@ -1887,7 +1887,7 @@
                         "line_numbers": [
                             140
                         ],
-                        "file": "src/main/java/org/kohsuke/groovy/sandbox/SandboxTransformer.java",
+                        "source_file": "src/main/java/org/kohsuke/groovy/sandbox/SandboxTransformer.java",
                         "location": "org.kohsuke.groovy.sandbox.SandboxTransformer#call(org.codehaus.groovy.control.SourceUnit, org.codehaus.groovy.classgen.GeneratorContext, org.codehaus.groovy.ast.ClassNode)"
                     }
                 ]
@@ -1936,7 +1936,7 @@
                         "line_numbers": [
                             207
                         ],
-                        "file": "core/src/main/java/hudson/scheduler/CronTab.java",
+                        "source_file": "core/src/main/java/hudson/scheduler/CronTab.java",
                         "location": "hudson.scheduler.CronTab#addTo(java.util.Calendar,int)"
                     }
                 ]
@@ -1989,7 +1989,7 @@
                         "line_numbers": [
                             147
                         ],
-                        "file": "core/src/main/java/hudson/util/XStream2.java",
+                        "source_file": "core/src/main/java/hudson/util/XStream2.java",
                         "location": "hudson.util.XStream2#init()"
                     }
                 ]
@@ -2042,7 +2042,7 @@
                         "line_numbers": [
                             358
                         ],
-                        "file": "core/src/main/java/hudson/scheduler/CronTab.java",
+                        "source_file": "core/src/main/java/hudson/scheduler/CronTab.java",
                         "location": "hudson.scheduler.CronTab#ceil(java.util.Calendar)"
                     }
                 ]
@@ -2101,7 +2101,7 @@
                         "line_numbers": [
                             164
                         ],
-                        "file": "src/main/java/hudson/tasks/junit/SuiteResult.java",
+                        "source_file": "src/main/java/hudson/tasks/junit/SuiteResult.java",
                         "location": "hudson.tasks.junit.SuiteResult#parse(java.io.File,boolean,hudson.tasks.test.PipelineTestDetails)"
                     }
                 ]
@@ -2148,7 +2148,7 @@
                         "line_numbers": [
                             65
                         ],
-                        "file": "src/main/java/org/jenkinsci/plugins/workflow/support/steps/build/BuildTriggerStepExecution.java",
+                        "source_file": "src/main/java/org/jenkinsci/plugins/workflow/support/steps/build/BuildTriggerStepExecution.java",
                         "location": "org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStepExecution#start()"
                     }
                 ]
