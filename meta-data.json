@@ -12,7 +12,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -33,7 +33,17 @@
             "root_abspath": "/experiment/vul4j/alibaba/CVE-2017-18349/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/com/alibaba/fastjson/serializer/ObjectArrayCodec.java",
+                "line_numbers": [
+                    177
+                ],
+                "score": 1,
+                "function": "com.alibaba.fastjson.serializer$ObjectArrayCodec$177#deserialze(com.alibaba.fastjson.parser.DefaultJSONParser,java.lang.reflect.Type,Object)"
+            }
+        ]
     },
     {
         "id": 2,
@@ -48,7 +58,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/batik-dom/target/all-dependencies.jar"
+            "src/batik-dom/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl batik-dom",
@@ -69,7 +79,18 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2017-5662/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "batik-dom/src/main/java/org/apache/batik/dom/util/SAXDocumentFactory.java",
+                "line_numbers": [
+                    405,
+                    449
+                ],
+                "score": 1,
+                "function": "org.apache.batik.dom.util$SAXDocumentFactory$405#createDocument(String,String,String)"
+            }
+        ]
     },
     {
         "id": 3,
@@ -84,7 +105,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/camel-core/target/all-dependencies.jar"
+            "src/camel-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl camel-core",
@@ -105,7 +126,15 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2015-0263/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "camel-core/src/main/java/org/apache/camel/converter/jaxp/XmlConverter.java",
+                "line_numbers": [],
+                "score": 1,
+                "function": "org.apache.camel.converter.jaxp$XmlConverter#toSAXSourceFromStream(javax.xml.transform.stream.StreamSource,org.apache.camel.Exchange)"
+            }
+        ]
     },
     {
         "id": 4,
@@ -120,7 +149,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/camel-core/target/all-dependencies.jar"
+            "src/camel-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl camel-core",
@@ -141,7 +170,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2015-0264/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "camel-core/src/main/java/org/apache/camel/builder/xml/XPathBuilder.java",
+                "line_numbers": [
+                    1116
+                ],
+                "score": 1,
+                "function": "org.apache.camel.builder.xml$XPathBuilder$1116#doGetDocument(org.apache.camel.Exchange,Object)"
+            }
+        ]
     },
     {
         "id": 5,
@@ -156,7 +195,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -177,7 +216,17 @@
             "root_abspath": "/experiment/vul4j/apache/APACHE-COMMONS-001/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/compress/archivers/examples/Expander.java",
+                "line_numbers": [
+                    241
+                ],
+                "score": 1,
+                "function": "org.apache.commons.compress.archivers.examples$Expander$241#expand(org.apache.commons.compress.archivers.ArchiveEntrySupplier,EntryWriter,java.io.File)"
+            }
+        ]
     },
     {
         "id": 6,
@@ -192,7 +241,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -213,7 +262,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2018-1324/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java",
+                "line_numbers": [
+                    313
+                ],
+                "score": 1,
+                "function": "org.apache.commons.compress.archivers.zip$X0017_StrongEncryptionHeader$313#parseCentralDirectoryFormat(byte[],int,int)"
+            }
+        ]
     },
     {
         "id": 7,
@@ -228,7 +287,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -249,7 +308,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2018-11771/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java",
+                "line_numbers": [
+                    528
+                ],
+                "score": 1,
+                "function": "org.apache.commons.compress.archivers.zip$ZipArchiveInputStream$528#readStored(byte[],int,int)"
+            }
+        ]
     },
     {
         "id": 8,
@@ -264,7 +333,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -285,7 +354,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2019-12402/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/compress/archivers/zip/NioZipEncoding.java",
+                "line_numbers": [
+                    115
+                ],
+                "score": 1,
+                "function": "org.apache.commons.compress.archivers.zip$NioZipEncoding$115#encode(String)"
+            }
+        ]
     },
     {
         "id": 9,
@@ -300,7 +379,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -321,7 +400,21 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2020-1953/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/configuration2/YAMLConfiguration.java",
+                "line_numbers": [
+                    68,
+                    83,
+                    120,
+                    135,
+                    144
+                ],
+                "score": 1,
+                "function": "org.apache.commons.configuration2$YAMLConfiguration$144#"
+            }
+        ]
     },
     {
         "id": 10,
@@ -336,7 +429,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -357,7 +450,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2013-2186/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/fileupload/disk/DiskFileItem.java",
+                "line_numbers": [
+                    658
+                ],
+                "score": 1,
+                "function": "org.apache.commons.fileupload.disk$DiskFileItem$658#readObject(java.io.ObjectInputStream)"
+            }
+        ]
     },
     {
         "id": 11,
@@ -372,7 +475,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -393,7 +496,28 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2014-0050/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/fileupload/FileUploadBase.java",
+                "line_numbers": [
+                    994,
+                    1186,
+                    1198
+                ],
+                "score": 1,
+                "function": "org.apache.commons.fileupload$FileUploadBase#raiseError(long,long)"
+            },
+            {
+                "source_file": "src/main/java/org/apache/commons/fileupload/MultipartStream.java",
+                "line_numbers": [
+                    334,
+                    336
+                ],
+                "score": 1,
+                "function": "org.apache.commons.fileupload$MultipartStream$334#MultipartStream(java.io.InputStream,byte[],int,ProgressNotifier)"
+            }
+        ]
     },
     {
         "id": 12,
@@ -408,7 +532,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -429,7 +553,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2018-17202/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/imaging/formats/jpeg/decoder/JpegDecoder.java",
+                "line_numbers": [
+                    403
+                ],
+                "score": 1,
+                "function": "org.apache.commons.imaging.formats.jpeg.decoder$JpegDecoder$403#extend(int,int)"
+            }
+        ]
     },
     {
         "id": 13,
@@ -444,7 +578,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -465,7 +599,18 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2018-17201/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/imaging/formats/rgbe/RgbeInfo.java",
+                "line_numbers": [
+                    172,
+                    178
+                ],
+                "score": 1,
+                "function": "org.apache.commons.imaging.formats.rgbe$RgbeInfo$178#decompress(java.io.InputStream,byte[])"
+            }
+        ]
     },
     {
         "id": 14,
@@ -480,7 +625,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -501,7 +646,18 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2021-29425/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/commons/io/FilenameUtils.java",
+                "line_numbers": [
+                    679,
+                    1492
+                ],
+                "score": 1,
+                "function": "org.apache.commons.io$FilenameUtils$679#getPrefixLength(String)"
+            }
+        ]
     },
     {
         "id": 15,
@@ -516,7 +672,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/rt/rs/extensions/providers/target/all-dependencies.jar"
+            "src/rt/rs/extensions/providers/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn -pl rt/rs/extensions/providers",
@@ -537,7 +693,18 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-8739/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "cxf/rt/rs/extensions/providers/src/main/java/org/apache/cxf/jaxrs/provider/atom/AbstractAtomProvider.java",
+                "line_numbers": [
+                    92,
+                    95
+                ],
+                "score": 1,
+                "function": "org.apache.cxf.jaxrs.provider.atom$AbstractAtomProvider$92#readFrom(Class<T>,java.lang.reflect.Type,java.lang.annotation.Annotation[],javax.ws.rs.core.MediaType,javax.ws.rs.core.MultivaluedMap<String, String>,java.io.InputStream)"
+            }
+        ]
     },
     {
         "id": 16,
@@ -552,7 +719,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/rt/rs/security/sso/saml/target/all-dependencies.jar"
+            "src/rt/rs/security/sso/saml/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn -pl rt/rs/security/sso/saml",
@@ -573,7 +740,21 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2015-5253/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "cxf/rt/rs/security/sso/saml/src/main/java/org/apache/cxf/rs/security/saml/sso/SAMLSSOResponseValidator.java",
+                "line_numbers": [
+                    95,
+                    117,
+                    126,
+                    129,
+                    143
+                ],
+                "score": 1,
+                "function": "org.apache.cxf.rs.security.saml.sso$SAMLSSOResponseValidator$95#validateSamlResponse(org.opensaml.saml.saml2.core.Response,boolean)"
+            }
+        ]
     },
     {
         "id": 17,
@@ -588,7 +769,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/httpclient/target/all-dependencies.jar"
+            "src/httpclient/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl httpclient",
@@ -609,7 +790,18 @@
             "root_abspath": "/experiment/vul4j/apache/HTTPCLIENT-1803/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "httpclient/src/main/java/org/apache/http/client/utils/URIBuilder.java",
+                "line_numbers": [
+                    496,
+                    507
+                ],
+                "score": 1,
+                "function": "org.apache.http.client.utils$URIBuilder$496#normalizePath(String)"
+            }
+        ]
     },
     {
         "id": 18,
@@ -624,7 +816,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/jspwiki-main/target/all-dependencies.jar"
+            "src/jspwiki-main/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl jspwiki-main",
@@ -645,7 +837,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2019-0225/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "jspwiki-main/src/main/java/org/apache/wiki/url/DefaultURLConstructor.java",
+                "line_numbers": [
+                    280
+                ],
+                "score": 1,
+                "function": "org.apache.wiki.url$DefaultURLConstructor$280#getForwardPage(javax.servlet.http.HttpServletRequest)"
+            }
+        ]
     },
     {
         "id": 19,
@@ -660,7 +862,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/pdfbox/target/all-dependencies.jar"
+            "src/pdfbox/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl pdfbox",
@@ -681,7 +883,17 @@
             "root_abspath": "/experiment/vul4j/apache/PDFBOX-3341/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java",
+                "line_numbers": [
+                    240
+                ],
+                "score": 1,
+                "function": "org.apache.pdfbox.pdmodel.encryption$StandardSecurityHandler$240#prepareForDecryption(PDEncryption,org.apache.pdfbox.cos.COSArray,DecryptionMaterial)"
+            }
+        ]
     },
     {
         "id": 20,
@@ -696,7 +908,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/pdfbox/target/all-dependencies.jar"
+            "src/pdfbox/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl pdfbox",
@@ -717,7 +929,18 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2018-11797/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "pdfbox/src/main/java/org/apache/pdfbox/cos/COSArray.java",
+                "line_numbers": [
+                    537,
+                    539
+                ],
+                "score": 1,
+                "function": "org.apache.pdfbox.cos$COSArray$537#toFloatArray()"
+            }
+        ]
     },
     {
         "id": 21,
@@ -732,7 +955,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -753,7 +976,35 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2014-8152/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/xml/security/stax/ext/InputProcessorChain.java",
+                "line_numbers": [
+                    82
+                ],
+                "score": 1,
+                "function": "org.apache.xml.security.stax.ext$InputProcessorChain$82#createSubChain(InputProcessor,boolean)"
+            },
+            {
+                "source_file": "src/main/java/org/apache/xml/security/stax/impl/InputProcessorChainImpl.java",
+                "line_numbers": [
+                    203,
+                    206
+                ],
+                "score": 1,
+                "function": "org.apache.xml.security.stax.impl$InputProcessorChainImpl$203#createSubChain(InputProcessor)"
+            },
+            {
+                "source_file": "santuario-java/src/main/java/org/apache/xml/security/stax/impl/processor/input/XMLSecurityInputProcessor.java",
+                "line_numbers": [
+                    141,
+                    146
+                ],
+                "score": 1,
+                "function": "org.apache.xml.security.stax.impl.processor.input$XMLSecurityInputProcessor$141#processNextEvent(InputProcessorChain)"
+            }
+        ]
     },
     {
         "id": 22,
@@ -768,7 +1019,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/web/target/all-dependencies.jar"
+            "src/web/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl web",
@@ -789,7 +1040,18 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-6802/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "web/src/main/java/org/apache/shiro/web/util/WebUtils.java",
+                "line_numbers": [
+                    251,
+                    256
+                ],
+                "score": 1,
+                "function": "org.apache.shiro.web.util$WebUtils$251#getContextPath(javax.servlet.http.HttpServletRequest)"
+            }
+        ]
     },
     {
         "id": 23,
@@ -804,7 +1066,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/bundles/extensions/xss/target/all-dependencies.jar"
+            "src/bundles/extensions/xss/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl bundles/extensions/xss",
@@ -825,7 +1087,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-5394/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "bundles/extensions/xss/src/main/java/org/apache/sling/xss/impl/XSSAPIImpl.java",
+                "line_numbers": [
+                    432
+                ],
+                "score": 1,
+                "function": "org.apache.sling.xss.impl$XSSAPIImpl$432#encodeForXMLAttr(String)"
+            }
+        ]
     },
     {
         "id": 24,
@@ -840,7 +1112,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/bundles/extensions/xss/target/all-dependencies.jar"
+            "src/bundles/extensions/xss/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl bundles/extensions/xss",
@@ -861,7 +1133,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-6798/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "bundles/extensions/xss/src/main/java/org/apache/sling/xss/impl/XSSAPIImpl.java",
+                "line_numbers": [
+                    68
+                ],
+                "score": 1,
+                "function": "org.apache.sling.xss.impl$XSSAPIImpl$68#activate()"
+            }
+        ]
     },
     {
         "id": 25,
@@ -876,7 +1158,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -897,7 +1179,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2017-15717/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/apache/sling/xss/impl/XSSAPIImpl.java",
+                "line_numbers": [
+                    231
+                ],
+                "score": 1,
+                "function": "org.apache.sling.xss.impl$XSSAPIImpl$231#getValidHref(String)"
+            }
+        ]
     },
     {
         "id": 26,
@@ -912,7 +1204,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -933,7 +1225,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-4465/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/com/opensymphony/xwork2/validator/validators/URLValidator.java",
+                "line_numbers": [
+                    84
+                ],
+                "score": 1,
+                "function": "com.opensymphony.xwork2.validator.validators$URLValidator$84#getUrlRegex()"
+            }
+        ]
     },
     {
         "id": 27,
@@ -948,7 +1250,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/xwork-core/target/all-dependencies.jar"
+            "src/xwork-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl xwork-core",
@@ -969,7 +1271,21 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2014-0112/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/org/apache/struts2/interceptor/CookieInterceptor.java",
+                "line_numbers": [
+                    176,
+                    177,
+                    226,
+                    236,
+                    246
+                ],
+                "score": 1,
+                "function": "org.apache.struts2/interceptor$CookieInterceptor$226#intercept(ActionInvocation)"
+            }
+        ]
     },
     {
         "id": 28,
@@ -984,7 +1300,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -1005,7 +1321,21 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2014-0113/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/org/apache/struts2/interceptor/CookieInterceptor.java",
+                "line_numbers": [
+                    176,
+                    177,
+                    226,
+                    236,
+                    246
+                ],
+                "score": 1,
+                "function": "org.apache.struts2/interceptor$CookieInterceptor$226#intercept(ActionInvocation)"
+            }
+        ]
     },
     {
         "id": 29,
@@ -1020,7 +1350,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/xwork-core/target/all-dependencies.jar"
+            "src/xwork-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -1041,7 +1371,22 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2014-0116/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/org/apache/struts2/interceptor/CookieInterceptor.java",
+                "line_numbers": [
+                    178,
+                    179,
+                    256,
+                    263,
+                    303,
+                    314
+                ],
+                "score": 1,
+                "function": "org.apache.struts2.interceptor$CookieInterceptor$256#isAcceptableValue(String)"
+            }
+        ]
     },
     {
         "id": 30,
@@ -1056,7 +1401,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -1077,7 +1422,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-8738/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/com/opensymphony/xwork2/validator/validators/URLValidator.java",
+                "line_numbers": [
+                    58
+                ],
+                "score": 1,
+                "function": "com.opensymphony.xwork2.validator.validators$URLValidator$58#validate(Object)"
+            }
+        ]
     },
     {
         "id": 31,
@@ -1092,7 +1447,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -1113,7 +1468,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-4436/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java",
+                "line_numbers": [
+                    387
+                ],
+                "score": 1,
+                "function": "org.apache.struts2.dispatcher.mapper$DefaultActionMapper$387#cleanupActionName(String)"
+            }
+        ]
     },
     {
         "id": 32,
@@ -1128,7 +1493,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/xwork-core/target/all-dependencies.jar"
+            "src/xwork-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl xwork-core",
@@ -1149,7 +1514,26 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2015-1831/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "struts/xwork-core/src/main/java/com/opensymphony/xwork2/security/DefaultExcludedPatternsChecker.java",
+                "line_numbers": [
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28
+                ],
+                "score": 1,
+                "function": "com.opensymphony.xwork2.security$DefaultExcludedPatternsChecker$19#"
+            }
+        ]
     },
     {
         "id": 33,
@@ -1164,7 +1548,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -1185,7 +1569,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-3081/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/com/opensymphony/xwork2/ognl/OgnlUtil.java",
+                "line_numbers": [
+                    306
+                ],
+                "score": 1,
+                "function": "com.opensymphony.xwork2.ognl$OgnlUtil$306#setValue(String,java.util.Map<String, Object>)"
+            }
+        ]
     },
     {
         "id": 34,
@@ -1200,7 +1594,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -1221,7 +1615,17 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2016-2162/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/com/opensymphony/xwork2/interceptor/I18nInterceptor.java",
+                "line_numbers": [
+                    221
+                ],
+                "score": 1,
+                "function": "com.opensymphony.xowrk2.interceptor$I18nInterceptor$221#getLocaleFromParam(Object)"
+            }
+        ]
     },
     {
         "id": 35,
@@ -1236,7 +1640,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests -DskipAssembly clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl core",
@@ -1257,7 +1661,18 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2014-7809/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/org/apache/struts2/util/TokenHelper.java",
+                "line_numbers": [
+                    32,
+                    54
+                ],
+                "score": 1,
+                "function": "org.apache.struts2.util$TokenHelper$54#"
+            }
+        ]
     },
     {
         "id": 36,
@@ -1272,7 +1687,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/tika-parsers/target/all-dependencies.jar"
+            "src/tika-parsers/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl tika-parsers",
@@ -1293,7 +1708,22 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2018-8017/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "tika-parsers/src/main/java/org/apache/tika/parser/iptc/IptcAnpaParser.java",
+                "line_numbers": [
+                    466,
+                    511,
+                    578,
+                    677,
+                    716,
+                    723
+                ],
+                "score": 1,
+                "function": "org.apache.tika.parser.iptc$IptcAnpaParser$466#parseBody(byte[],HashMap<String,String>)"
+            }
+        ]
     },
     {
         "id": 37,
@@ -1308,7 +1738,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/container/openejb-core/target/all-dependencies.jar"
+            "src/container/openejb-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl container/openejb-core",
@@ -1329,7 +1759,59 @@
             "root_abspath": "/experiment/vul4j/apache/CVE-2015-8581/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "tomee/arquillian/arquillian-tomee-common/src/main/java/org/apache/openejb/arquillian/common/Setup.java",
+                "line_numbers": [
+                    305
+                ],
+                "score": 1,
+                "function": "org.apache.openejb.arquillian.common$Setup$305#configureSystemProperties(java.io.File,TomEEConfiguration)"
+            },
+            {
+                "source_file": "tomee/arquillian/arquillian-tomee-common/src/main/java/org/apache/openejb/arquillian/common/TomEEConfiguration.java",
+                "line_numbers": [
+                    49,
+                    55
+                ],
+                "score": 1,
+                "function": "org.apache.openejb.arquillian.common$TomEEConfiguration$55#"
+            },
+            {
+                "source_file": "tomee/arquillian/arquillian-tomee-embedded/src/main/java/org/apache/openejb/arquillian/embedded/EmbeddedTomEEConfiguration.java",
+                "line_numbers": [
+                    174,
+                    175
+                ],
+                "score": 1,
+                "function": "org.apache.openejb.arquillian.embedded$EmbeddedTomEEConfiguration$175#systemPropertiesAsProperties()"
+            },
+            {
+                "source_file": "container/openejb-core/src/main/java/org/apache/openejb/core/rmi/BlacklistClassResolver.java",
+                "line_numbers": [
+                    59
+                ],
+                "score": 1,
+                "function": "org.apache.openejb.core.rmi$BlacklistClassResolver$59#toArray(String)"
+            },
+            {
+                "source_file": "server/openejb-client/src/main/java/org/apache/openejb/client/EjbObjectInputStream.java",
+                "line_numbers": [
+                    126
+                ],
+                "score": 1,
+                "function": "org.apache.openejb.client$EjbObjectInputStream$126#toArray(String)"
+            },
+            {
+                "source_file": "tomee/tomee-common/src/main/java/org/apache/tomee/installer/Installer.java",
+                "line_numbers": [
+                    705
+                ],
+                "score": 1,
+                "function": "org.apache.tomee.installer$Installer$705#installConfigFiles(boolean)"
+            }
+        ]
     },
     {
         "id": 38,
@@ -1344,7 +1826,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/cas-client-core/target/all-dependencies.jar"
+            "src/cas-client-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl cas-client-core",
@@ -1365,7 +1847,27 @@
             "root_abspath": "/experiment/vul4j/apereo/CVE-2014-4172/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "java-cas-client/cas-client-core/src/main/java/org/jasig/cas/client/validation/AbstractUrlBasedTicketValidator.java",
+                "line_numbers": [
+                    113,
+                    147,
+                    148
+                ],
+                "score": 1,
+                "function": "org.jasig.cas.client.validation$AbstractUrlBasedTicketValidator$113#constructValidationUrl(String,String)"
+            },
+            {
+                "source_file": "cas-client-core/src/main/java/org/jasig/cas/client/validation/Cas20ServiceTicketValidator.java",
+                "line_numbers": [
+                    73
+                ],
+                "score": 1,
+                "function": "org.jasig.cas.client.validation$Cas20ServiceTicketValidator$73#populateUrlAttributeMap(java.util.Map<String, String>)"
+            }
+        ]
     },
     {
         "id": 39,
@@ -1399,7 +1901,17 @@
             "root_abspath": "/experiment/vul4j/cloudfoundry/CVE-2018-1192/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "server/src/main/java/org/cloudfoundry/identity/uaa/authentication/UaaAuthenticationDetails.java",
+                "line_numbers": [
+                    115
+                ],
+                "score": 1,
+                "function": "org.cloudfoundry.identity.uaa.authentication$UaaAuthenticationDetails$115#toString()"
+            }
+        ]
     },
     {
         "id": 40,
@@ -1433,7 +1945,17 @@
             "root_abspath": "/experiment/vul4j/cloudfoundry/CVE-2019-3775/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "server/src/main/java/org/cloudfoundry/identity/uaa/security/ScimUserSelfUpdateAllowed.java",
+                "line_numbers": [
+                    40
+                ],
+                "score": 1,
+                "function": "org.cloudfoundry.identity.uaa.security$ScimUserSelfUpdateAllowed$40#isAllowed(javax.servlet.http.HttpServletRequest)"
+            }
+        ]
     },
     {
         "id": 41,
@@ -1448,7 +1970,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -1469,7 +1991,17 @@
             "root_abspath": "/experiment/vul4j/codehaus-plexus/CVE-2018-1002200/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/codehaus/plexus/archiver/AbstractUnArchiver.java",
+                "line_numbers": [
+                    310
+                ],
+                "score": 1,
+                "function": "org.codehaus.plexus.archiver$AbstractUnArchiver$310#extractFile(java.io.File,java.io.File,java.io.InputStream)"
+            }
+        ]
     },
     {
         "id": 42,
@@ -1484,7 +2016,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -1506,7 +2038,50 @@
             "root_abspath": "/experiment/vul4j/codehaus-plexus/CVE-2017-1000487/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/codehaus/plexus/util/cli/Commandline.java",
+                "line_numbers": [
+                    256,
+                    406,
+                    486,
+                    636,
+                    651,
+                    672
+                ],
+                "score": 1,
+                "function": "org.codehaus.plexus.util.cli$Commandline$256#"
+            },
+            {
+                "source_file": "src/main/java/org/codehaus/plexus/util/cli/shell/BourneShell.java",
+                "line_numbers": [
+                    52,
+                    57,
+                    60,
+                    80,
+                    130,
+                    158,
+                    164,
+                    170
+                ],
+                "score": 1,
+                "function": "org.codehaus.plexus.util.cli.shell$BourneShell$52#"
+            },
+            {
+                "source_file": "src/main/java/org/codehaus/plexus/util/cli/shell/Shell.java",
+                "line_numbers": [
+                    50,
+                    70,
+                    131,
+                    147,
+                    166,
+                    283
+                ],
+                "score": 1,
+                "function": "org.codehaus.plexus.util.cli.shell$Shell$50#"
+            }
+        ]
     },
     {
         "id": 43,
@@ -1521,7 +2096,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/util/target/all-dependencies.jar"
+            "src/util/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install; mvn -pl util test-compile -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl util",
@@ -1542,7 +2117,17 @@
             "root_abspath": "/experiment/vul4j/eclipse/CVE-2018-20227/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "util/src/main/java/org/eclipse/rdf4j/common/io/ZipUtil.java",
+                "line_numbers": [
+                    94
+                ],
+                "score": 1,
+                "function": "org.eclipse.rdf4j.common.io$ZipUtil$94#extract(java.util.zip.ZipFile,java.io.File)"
+            }
+        ]
     },
     {
         "id": 44,
@@ -1557,7 +2142,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -1578,7 +2163,17 @@
             "root_abspath": "/experiment/vul4j/ESAPI/CVE-2013-5960/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/owasp/esapi/codecs/PercentCodec.java",
+                "line_numbers": [
+                    101
+                ],
+                "score": 1,
+                "function": "org.owasp.esapi.codecs$PercentCodec$101#"
+            }
+        ]
     },
     {
         "id": 45,
@@ -1593,7 +2188,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/esigate-core/target/all-dependencies.jar"
+            "src/esigate-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl esigate-core",
@@ -1614,7 +2209,17 @@
             "root_abspath": "/experiment/vul4j/esigate/CVE-2018-1000854/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "esigate-core/src/main/java/org/esigate/xml/XsltRenderer.java",
+                "line_numbers": [
+                    91
+                ],
+                "score": 1,
+                "function": "org.esigate.xml$XsltRenderer$91#createTransformer(java.io.InputStream)"
+            }
+        ]
     },
     {
         "id": 46,
@@ -1629,7 +2234,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -1650,7 +2255,17 @@
             "root_abspath": "/experiment/vul4j/FasterXML/CVE-2016-3720/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java",
+                "line_numbers": [
+                    114
+                ],
+                "score": 1,
+                "function": "com.fasterxml.jackson.dataformat.xml$XmlFactory$114#XmlFactory(ObjectCodec,int,int,XMLInputFactory,XMLOutputFactory,String)"
+            }
+        ]
     },
     {
         "id": 47,
@@ -1665,7 +2280,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -1686,7 +2301,17 @@
             "root_abspath": "/experiment/vul4j/FasterXML/CVE-2016-7051/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java",
+                "line_numbers": [
+                    116
+                ],
+                "score": 1,
+                "function": "com.fasterxml.jackson.dataformat.xml$XmlFactory$114#XmlFactory(ObjectCodec,int,int,XMLInputFactory,XMLOutputFactory,String)"
+            }
+        ]
     },
     {
         "id": 48,
@@ -1701,7 +2326,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -1722,7 +2347,18 @@
             "root_abspath": "/experiment/vul4j/inversoft/CVE-2018-1000531/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/primeframework/jwt/JWTDecoder.java",
+                "line_numbers": [
+                    154,
+                    168
+                ],
+                "score": 1,
+                "function": "org.primeframework.jwt$JWTDecoder$154#decode(String,org.primeframework.jwt.domain.Header,String[],Verifier)"
+            }
+        ]
     },
     {
         "id": 49,
@@ -1737,7 +2373,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -1758,7 +2394,21 @@
             "root_abspath": "/experiment/vul4j/inversoft/CVE-2018-1000125/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/primeframework/jwt/JWTDecoder.java",
+                "line_numbers": [
+                    69,
+                    70,
+                    119,
+                    120,
+                    152
+                ],
+                "score": 1,
+                "function": "org.primeframework.jwt$JWTDecoder$69#decode(String,Verifier...)"
+            }
+        ]
     },
     {
         "id": 50,
@@ -1773,7 +2423,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/javamelody-core/target/all-dependencies.jar"
+            "src/javamelody-core/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl javamelody-core",
@@ -1794,7 +2444,17 @@
             "root_abspath": "/experiment/vul4j/javamelody/CVE-2013-4378/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "javamelody-core/src/main/java/net/bull/javamelody/HtmlSessionInformationsReport.java",
+                "line_numbers": [
+                    162
+                ],
+                "score": 1,
+                "function": "net.bull.javamelody$HtmlSessionInformationsReport$162#writeSession(net.bull.javamelody.SessionInformations,boolean)"
+            }
+        ]
     },
     {
         "id": 51,
@@ -1809,7 +2469,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "clean_command": "mvn clean",
         "build_command": "mvn -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
@@ -1851,7 +2511,19 @@
             "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000054/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/hudson/plugins/ccm/parser/CcmParser.java",
+                "line_numbers": [
+                    87,
+                    88,
+                    89
+                ],
+                "score": 1,
+                "function": "hudson.plugins.ccm$CcmParser#parse(java.io.InputStream,String)"
+            }
+        ]
     },
     {
         "id": 52,
@@ -1866,7 +2538,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "clean_command": "mvn clean",
         "build_command": "mvn -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
@@ -1906,7 +2578,17 @@
             "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000865/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/kohsuke/groovy/sandbox/SandboxTransformer.java",
+                "line_numbers": [
+                    140
+                ],
+                "score": 1,
+                "function": "org.kohsuke.groovy.sandbox$SandboxTransformer#call(org.codehaus.groovy.control.SourceUnit, org.codehaus.groovy.classgen.GeneratorContext, org.codehaus.groovy.ast.ClassNode)"
+            }
+        ]
     },
     {
         "id": 53,
@@ -1921,7 +2603,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "clean_command": "mvn clean",
         "build_command": "mvn -pl core -DskipTests -Drat.skip=true clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
@@ -1961,7 +2643,17 @@
             "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1999044/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/hudson/scheduler/CronTab.java",
+                "line_numbers": [
+                    207
+                ],
+                "score": 1,
+                "function": "hudson.scheduler$CronTab#addTo(java.util.Calendar,int)"
+            }
+        ]
     },
     {
         "id": 54,
@@ -1976,7 +2668,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "analysis_output": [
             {
@@ -2014,7 +2706,17 @@
             "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2017-1000355/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/hudson/util/XStream2.java",
+                "line_numbers": [
+                    147
+                ],
+                "score": 1,
+                "function": "hudson.util$XStream2#init()"
+            }
+        ]
     },
     {
         "id": 55,
@@ -2029,7 +2731,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/core/target/all-dependencies.jar"
+            "src/core/all-dependencies.jar"
         ],
         "analysis_output": [
             {
@@ -2067,7 +2769,17 @@
             "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000864/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/hudson/scheduler/CronTab.java",
+                "line_numbers": [
+                    358
+                ],
+                "score": 1,
+                "function": "hudson.scheduler$CronTab#ceil(java.util.Calendar)"
+            }
+        ]
     },
     {
         "id": 56,
@@ -2082,7 +2794,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -2120,7 +2832,17 @@
             "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000056/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/hudson/tasks/junit/SuiteResult.java",
+                "line_numbers": [
+                    164
+                ],
+                "score": 1,
+                "function": "hudson.tasks.junit$SuiteResult#parse(java.io.File,boolean,hudson.tasks.test.PipelineTestDetails)"
+            }
+        ]
     },
     {
         "id": 57,
@@ -2135,7 +2857,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "analysis_output": [
             {
@@ -2173,7 +2895,17 @@
             "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000089/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/jenkinsci/plugins/workflow/support/steps/build/BuildTriggerStepExecution.java",
+                "line_numbers": [
+                    65
+                ],
+                "score": 1,
+                "function": "org.jenkinsci.plugins.workflow.support.steps.build$BuildTriggerStepExecution#start()"
+            }
+        ]
     },
     {
         "id": 58,
@@ -2188,7 +2920,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -2209,7 +2941,29 @@
             "root_abspath": "/experiment/vul4j/jenkinsci/CVE-2018-1000111/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/hudson/scm/SubversionRepositoryStatus.java",
+                "line_numbers": [
+                    52,
+                    63,
+                    64,
+                    65,
+                    96
+                ],
+                "score": 1,
+                "function": "hudson.scm$SubversionRepositoryStatus#"
+            },
+            {
+                "source_file": "src/main/java/hudson/scm/SubversionStatus.java",
+                "line_numbers": [
+                    40
+                ],
+                "score": 1,
+                "function": "hudson.scm$SubversionStatus#"
+            }
+        ]
     },
     {
         "id": 59,
@@ -2224,7 +2978,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -2245,7 +2999,17 @@
             "root_abspath": "/experiment/vul4j/jhy/CVE-2015-6748/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/jsoup/parser/TokeniserState.java",
+                "line_numbers": [
+                    760
+                ],
+                "score": 1,
+                "function": "org.jsoup.parser$TokeniserState$760#read(Tokeniser,CharacterReader)"
+            }
+        ]
     },
     {
         "id": 60,
@@ -2260,7 +3024,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -2281,7 +3045,17 @@
             "root_abspath": "/experiment/vul4j/nahsra/CVE-2016-10006/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/owasp/validator/html/scan/MagicSAXFilter.java",
+                "line_numbers": [
+                    273
+                ],
+                "score": 1,
+                "function": "org.owasp.validator.html.scan$MagicSAXFilter#startElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.XMLAttributes,org.apache.xerces.xni.Augmentations)"
+            }
+        ]
     },
     {
         "id": 61,
@@ -2315,7 +3089,17 @@
             "root_abspath": "/experiment/vul4j/neo4j-contrib/CVE-2018-1000820/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/apoc/load/Xml.java",
+                "line_numbers": [
+                    68
+                ],
+                "score": 1,
+                "function": "apoc.load$Xml$68#xmlXpathToMapResult(String,boolean)"
+            }
+        ]
     },
     {
         "id": 62,
@@ -2330,7 +3114,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/enterprise/security/target/all-dependencies.jar"
+            "src/enterprise/security/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn failsafe:integration-test",
@@ -2351,7 +3135,17 @@
             "root_abspath": "/experiment/vul4j/neo4j/CVE-2018-18389/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "enterprise/security/src/main/java/org/neo4j/server/security/enterprise/auth/LdapRealm.java",
+                "line_numbers": [
+                    234
+                ],
+                "score": 1,
+                "function": "org.neo4j.server.security.enterprise.auth$LdapRealm$234#getLdapContextUsingStartTls(org.apache.shiro.realm.LdapContextFactory,Object,Object)"
+            }
+        ]
     },
     {
         "id": 63,
@@ -2366,7 +3160,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/protocols/ovsdb/rfc/target/all-dependencies.jar"
+            "src/protocols/ovsdb/rfc/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl protocols/ovsdb/rfc",
@@ -2387,7 +3181,18 @@
             "root_abspath": "/experiment/vul4j/opennetworkinglab/CVE-2018-1000615/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "protocols/ovsdb/rfc/src/main/java/org/onosproject/ovsdb/rfc/utils/VersionUtil.java",
+                "line_numbers": [
+                    53,
+                    56
+                ],
+                "score": 1,
+                "function": "org.onosproject.ovsdb.rfc.utils$VersionUtil$53#versionMatch(String)"
+            }
+        ]
     },
     {
         "id": 64,
@@ -2402,7 +3207,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/main/target/all-dependencies.jar"
+            "src/main/all-dependencies.jar"
         ],
         "compile_cmd": "./refine build -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl main",
@@ -2423,7 +3228,17 @@
             "root_abspath": "/experiment/vul4j/OpenRefine/CVE-2018-20157/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "main/src/com/google/refine/importers/XmlImporter.java",
+                "line_numbers": [
+                    324
+                ],
+                "score": 1,
+                "function": "com.google.refine.importers$XmlImporter$324#createXMLStreamReader(java.io.InputStream)"
+            }
+        ]
     },
     {
         "id": 65,
@@ -2438,7 +3253,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/main/target/all-dependencies.jar"
+            "src/main/all-dependencies.jar"
         ],
         "compile_cmd": "./refine build -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl main",
@@ -2459,7 +3274,17 @@
             "root_abspath": "/experiment/vul4j/OpenRefine/CVE-2018-19859/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "main/src/com/google/refine/importing/ImportingUtilities.java",
+                "line_numbers": [
+                    444
+                ],
+                "score": 1,
+                "function": "com.google.refine.importing$ImportingUtilities$444#allocateFile(java.io.File,String)"
+            }
+        ]
     },
     {
         "id": 66,
@@ -2474,7 +3299,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/testsuite/unit-tests/target/all-dependencies.jar"
+            "src/testsuite/unit-tests/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "cd testsuite;mvn test",
@@ -2495,7 +3320,17 @@
             "root_abspath": "/experiment/vul4j/resteasy/CVE-2020-1695/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "resteasy-core/src/main/java/org/jboss/resteasy/plugins/delegates/MediaTypeHeaderDelegate.java",
+                "line_numbers": [
+                    52
+                ],
+                "score": 1,
+                "function": "org.jboss.resteasy.plugins.delegates$MediaTypeHeaderDelegate$52#isValid(String)"
+            }
+        ]
     },
     {
         "id": 67,
@@ -2510,7 +3345,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -2531,7 +3366,17 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2018-1274/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/springframework/data/mapping/PropertyPath.java",
+                "line_numbers": [
+                    325
+                ],
+                "score": 1,
+                "function": "org.springframework.data.mapping$PropertyPath$325#create(String,org.springframework.data.util.TypeInformation<?>,String,java.util.List<PropertyPath>)"
+            }
+        ]
     },
     {
         "id": 68,
@@ -2546,7 +3391,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/spring-data-rest-webmvc/target/all-dependencies.jar"
+            "src/spring-data-rest-webmvc/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl spring-data-rest-webmvc",
@@ -2567,7 +3412,28 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2017-8046/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/patch/AddOperation.java",
+                "line_numbers": [
+                    61,
+                    70,
+                    71
+                ],
+                "score": 1,
+                "function": "org.springframework.data.rest.webmvc.json.patch$AddOperation#evaluateValueFromTarget(Object,Class<T>)"
+            },
+            {
+                "source_file": "spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/patch/PatchOperation.java",
+                "line_numbers": [
+                    194,
+                    195
+                ],
+                "score": 1,
+                "function": "org.springframework.data.rest.webmvc.json.patch$PatchOperation#evaluateValueFromTarget(Object,Class<T>)"
+            }
+        ]
     },
     {
         "id": 69,
@@ -2601,7 +3467,19 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2016-9878/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "spring-webmvc/src/main/java/org/springframework/web/servlet/ResourceServlet.java",
+                "line_numbers": [
+                    280,
+                    281,
+                    287
+                ],
+                "score": 1,
+                "function": "org.springframework.web.servlet$ResourceServlet#doInclude(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,String)"
+            }
+        ]
     },
     {
         "id": 70,
@@ -2635,7 +3513,18 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2018-15756/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "spring-web/src/main/java/org/springframework/http/HttpRange.java",
+                "line_numbers": [
+                    137,
+                    183
+                ],
+                "score": 1,
+                "function": "org.sprintframework.http$HttpRange#"
+            }
+        ]
     },
     {
         "id": 71,
@@ -2669,7 +3558,17 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2018-1272/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "spring-core/src/main/java/org/springframework/util/MimeTypeUtils.java",
+                "line_numbers": [
+                    49
+                ],
+                "score": 1,
+                "function": "org.springframework.util$MimeTypeUtils$49#"
+            }
+        ]
     },
     {
         "id": 72,
@@ -2703,7 +3602,20 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2018-15801/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "oauth2/oauth2-jose/src/main/java/org/springframework/security/oauth2/jwt/JwtIssuerValidator.java",
+                "line_numbers": [
+                    40,
+                    51,
+                    65,
+                    66
+                ],
+                "score": 1,
+                "function": "org.springframework.security.oauth2.jwt$JwtIssuerValidator#JwtIssuerValidator(String)"
+            }
+        ]
     },
     {
         "id": 73,
@@ -2737,7 +3649,17 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2019-11272/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/org/springframework/security/authentication/encoding/PlaintextPasswordEncoder.java",
+                "line_numbers": [
+                    54
+                ],
+                "score": 1,
+                "function": "org.springframework.security.authentication.encoding$PlaintextPasswordEncoder$54#isPasswordValid(String,String,Object)"
+            }
+        ]
     },
     {
         "id": 74,
@@ -2771,7 +3693,17 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2019-3795/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "core/src/main/java/org/springframework/security/core/token/SecureRandomFactoryBean.java",
+                "line_numbers": [
+                    39
+                ],
+                "score": 1,
+                "function": "org.springframework.security.core.token$SecureRandomFactoryBean$39#getObject()"
+            }
+        ]
     },
     {
         "id": 75,
@@ -2786,7 +3718,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/spring-security-oauth2/target/all-dependencies.jar"
+            "src/spring-security-oauth2/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl spring-security-oauth2",
@@ -2807,7 +3739,19 @@
             "root_abspath": "/experiment/vul4j/spring-projects/CVE-2016-4977/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/SpelView.java",
+                "line_numbers": [
+                    38,
+                    50,
+                    71
+                ],
+                "score": 1,
+                "function": "org.springframework.security.oauth2.provider.endpoint$SpelView#SpelView(String)"
+            }
+        ]
     },
     {
         "id": 76,
@@ -2822,7 +3766,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/retrofit/target/all-dependencies.jar"
+            "src/retrofit/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl retrofit",
@@ -2843,7 +3787,17 @@
             "root_abspath": "/experiment/vul4j/square/CVE-2018-1000850/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "retrofit/src/main/java/retrofit2/RequestBuilder.java",
+                "line_numbers": [
+                    94
+                ],
+                "score": 1,
+                "function": "retrofit2$RequestBuilder$94#addPathParam(String,String value)"
+            }
+        ]
     },
     {
         "id": 77,
@@ -2858,7 +3812,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/modules/swagger-parser/target/all-dependencies.jar"
+            "src/modules/swagger-parser/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl modules/swagger-parser",
@@ -2879,7 +3833,18 @@
             "root_abspath": "/experiment/vul4j/swagger-api/CVE-2017-1000207/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "modules/swagger-parser/src/main/java/io/swagger/parser/util/DeserializationUtils.java",
+                "line_numbers": [
+                    60,
+                    65
+                ],
+                "score": 1,
+                "function": "io.swagger.parser.util$DeserializationUtils$60#readYamlTree(String)"
+            }
+        ]
     },
     {
         "id": 78,
@@ -2894,7 +3859,7 @@
         "java_version": 7,
         "build_system": "maven",
         "dependencies": [
-            "src/xstream/target/all-dependencies.jar"
+            "src/xstream/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test -pl xstream",
@@ -2915,7 +3880,19 @@
             "root_abspath": "/experiment/vul4j/x-stream/CVE-2019-10173/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "xstream/src/java/com/thoughtworks/xstream/XStream.java",
+                "line_numbers": [
+                    1482,
+                    1483,
+                    2362
+                ],
+                "score": 1,
+                "function": "com.thoughtworks.xstream$XStream$1482#unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,Object,com.thoughtworks.xstream.converters.DataHolder)"
+            }
+        ]
     },
     {
         "id": 79,
@@ -2930,7 +3907,7 @@
         "java_version": 8,
         "build_system": "maven",
         "dependencies": [
-            "src/target/all-dependencies.jar"
+            "src/all-dependencies.jar"
         ],
         "compile_cmd": "mvn -DskipTests clean install -Dhttps.protocols=TLSv1.2 -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -DskipITs=true -Drat.skip=true -Dlicense.skip=true -Dpmd.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Danimal.sniffer.skip=true -V -B",
         "test_all_cmd": "mvn test",
@@ -2951,6 +3928,19 @@
             "root_abspath": "/experiment/vul4j/zeroturnaround/CVE-2018-1002201/src",
             "entrypoint": {}
         },
-        "output_dir_abspath": "/output"
+        "output_dir_abspath": "/output",
+        "localization": [
+            {
+                "source_file": "src/main/java/org/zeroturnaround/zip/ZipUtil.java",
+                "line_numbers": [
+                    1153,
+                    1222,
+                    1227,
+                    1263
+                ],
+                "score": 1,
+                "function": "org.zeroturnaround.zip$ZipUtil$1153#process(java.io.InputStream,java.util.zip.ZipEntry)"
+            }
+        ]
     }
 ]
